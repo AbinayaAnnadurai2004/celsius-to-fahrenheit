@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>length converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!--
+  <center>
+    <div id="wrapper">
+            <br><br><br>
+            <h1 align="center">cm to inches</h1>
+            <br><br>
+            <div>
+               <input type="text" id="input" placeholder="length in cm">
+                </div>
+                <br><br>
+                <button type="submit" onclick="convert()">convert to inches</button>
+                 <br><br>
+
+                 <div id="result">
+
+                 </div>
+
+                 <script>
+                    function convert(){
+                    const cmvalue=Number(document.getElementById("input").value)
+                    const inchvalue=cmvalue/2.54
+                    const result=document.getElementById("result")
+                    result.innerHTML=inchvalue.toFixed(2)+"inches"                   
+                   }
+                 </script>
+            </div> 
+            <br><br>
+        </div>
+ </center> -->
+<center>
+ <div id="wrapper">
+  <h1 align="center">celcius to  farad converter</h>
+  <div>
+    <input type="text" id="input" placeholder="degrees in celcius" >
+
+  </div>
+
+  <div>
+    <button type="submit" onclick="convert()">convert to farads</button>
+  </div>
+
+  <div id="result">
+    
+  </div>
+
+  <script>
+    function convert(){
+    const celciusval=Number(document.getElementById("input").value)
+    const faradval=celciusval*(9/5)+32
+    const result=document.getElementById("result")
+    result.innerHTML=faradval + "degrees farads"
+    }
+  </script>
+ </div>
+</center>
+</body>
+</html>
